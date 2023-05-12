@@ -76,3 +76,8 @@ deploy:
     condition: $INTEGRATION_SPECS == 1
     repo: travis-ci/travis-build
   edge: true
+  sonar-scanner \
+  -Dsonar.organization=jipal8 \
+  -Dsonar.projectKey=jipal8_COpyfromPublic \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=https://sonarcloud.io
